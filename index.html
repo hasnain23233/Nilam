@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nilam P. | Social Media Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff5fb;--ink:#2d1b4e;--mute:#6b5a8a;--pink:#ff6fa5;--sun:#ffd34e;--mint:#5fe3b5;--sky:#6ec6ff;--vio:#8b6bff;--card:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:600 18px/1.6 Nunito,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.f{font-family:Fredoka,Nunito,sans-serif;font-weight:700;margin:0;line-height:1.1}
+a{color:inherit}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.5;z-index:0;pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+.b1{width:380px;height:380px;background:var(--sky);top:-80px;left:-80px}.b2{width:340px;height:340px;background:var(--sun);bottom:-60px;right:-60px;animation-delay:-5s}.b3{width:280px;height:280px;background:var(--pink);top:40%;left:60%;opacity:.3;animation-delay:-9s}
+@keyframes drift{to{transform:translate(60px,40px) scale(1.15)}}
+nav,main,footer{position:relative;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(255,245,251,.8);backdrop-filter:blur(10px)}
+nav b{font:700 26px Fredoka;color:var(--pink)}
+nav a{margin-left:14px;text-decoration:none;font-weight:800;padding:8px 16px;border-radius:30px;transition:background .2s,transform .2s}
+nav a:hover,nav a:focus-visible{background:var(--sun);transform:rotate(-4deg) scale(1.08);outline:none}
+section{padding:90px 5vw;max-width:1180px;margin:auto}
+h2{font-size:clamp(36px,5vw,58px);margin-bottom:12px}
+.sub{color:var(--mute);max-width:52ch;margin:0 0 46px}
+.hero{min-height:90vh;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.wave{display:inline-block;transform-origin:70% 70%;animation:wave 2.2s ease-in-out infinite}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(16deg)}20%,40%{transform:rotate(-10deg)}50%{transform:rotate(8deg)}}
+.hero h1{font-size:clamp(44px,7vw,88px)}
+.hl{background:var(--sun);padding:0 12px;border-radius:16px;display:inline-block;transform:rotate(-2deg)}
+.hero p{max-width:44ch;margin:22px 0 30px;color:var(--mute);font-size:20px}
+.btn{display:inline-block;padding:15px 28px;border-radius:40px;font:600 19px Fredoka;text-decoration:none;border:3px solid var(--ink);background:#fff;box-shadow:5px 5px 0 var(--ink);transition:transform .15s,box-shadow .15s;margin:0 10px 10px 0}
+.btn.main{background:var(--pink);color:#fff}
+.btn:hover,.btn:focus-visible{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink);outline:none}
+.btn:active{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--ink)}
+/* phone */
+.scene{perspective:1200px;height:520px;display:grid;place-items:center;position:relative}
+.rig{position:relative;width:250px;height:470px;transform-style:preserve-3d;transition:transform .12s ease-out}
+.phone{position:absolute;inset:0;border-radius:40px;border:6px solid var(--ink);background:#fff;box-shadow:14px 14px 0 rgba(45,27,78,.9);overflow:hidden;cursor:pointer;padding:16px;display:flex;flex-direction:column;gap:10px}
+.ph-h{display:flex;align-items:center;gap:10px}
+.av{width:44px;height:44px;border-radius:50%;background:conic-gradient(var(--pink),var(--sun),var(--mint),var(--sky),var(--pink));display:grid;place-items:center;font:700 20px Fredoka;color:#fff;border:3px solid #fff;outline:3px solid var(--pink)}
+.ph-h b{font:600 16px Fredoka;line-height:1.1}.ph-h small{display:block;color:var(--mute);font-size:12px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.tiles i{aspect-ratio:1;border-radius:12px;display:grid;place-items:center;font-style:normal;font-size:26px;transition:transform .3s}
+.tiles i:hover{transform:scale(1.2) rotate(8deg)}
+.post{flex:1;border-radius:20px;background:linear-gradient(135deg,var(--sky),var(--vio));display:grid;place-items:center;font-size:70px;position:relative}
+.act{font-size:24px;display:flex;gap:14px}
+.float{position:absolute;font-size:44px;pointer-events:none;animation:bob 3.5s ease-in-out infinite}
+@keyframes bob{50%{margin-top:-18px}}
+.heart{position:fixed;font-size:28px;pointer-events:none;z-index:20;animation:up 1.3s ease-out forwards}
+@keyframes up{to{transform:translateY(-160px) rotate(20deg);opacity:0}}
+.hint{position:absolute;bottom:0;font-size:15px;color:var(--mute)}
+
+.post{overflow:hidden}
+.post img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:26px;perspective:1000px}
+.shot{margin:0;position:relative;aspect-ratio:4/5;border:3px solid var(--ink);border-radius:28px;box-shadow:7px 7px 0 var(--ink);overflow:hidden;background:var(--c);cursor:zoom-in;display:grid;place-items:center;font-size:70px;transform-style:preserve-3d;transition:transform .15s ease-out;padding:0}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.shot:hover img{transform:scale(1.08)}
+.shot figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font:600 17px Fredoka;transform:translateZ(40px)}
+.lb{position:fixed;inset:0;background:rgba(45,27,78,.86);display:none;place-items:center;z-index:50;padding:5vw;cursor:zoom-out}
+.lb.on{display:grid;animation:lbin .4s cubic-bezier(.3,1.4,.5,1)}
+@keyframes lbin{from{opacity:0;transform:scale(.7) rotateX(30deg)}}
+.lb img{max-width:100%;max-height:88vh;border:4px solid #fff;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+
+.pf{display:flex;flex-direction:column;background:#fff;border:3px solid var(--ink);border-radius:28px;box-shadow:7px 7px 0 var(--ink);overflow:hidden;text-decoration:none;color:inherit;transform-style:preserve-3d;transition:transform .15s ease-out}
+.pf:focus-visible{outline:3px dashed var(--vio);outline-offset:5px}
+.pf .cv{position:relative;aspect-ratio:16/11;background:var(--c);display:grid;place-items:center;font-size:74px;overflow:hidden;border-bottom:3px solid var(--ink)}
+.pf .cv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.pf:hover .cv img{transform:scale(1.1)}
+.pf .tx{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pf h3{font-size:23px;transform:translateZ(30px)}
+.pf p{margin:0;font-size:16px;color:var(--mute);flex:1}
+.pf .go{align-self:flex-start;background:var(--c);border:2px solid var(--ink);border-radius:30px;padding:4px 16px;font:600 16px Fredoka;transition:transform .2s}
+.pf:hover .go{transform:translateX(6px) rotate(-3deg)}
+/* marquee */
+.mq{overflow:hidden;background:var(--ink);color:#fff;padding:14px 0;transform:rotate(-1.2deg);margin:20px -2vw;position:relative;z-index:1}
+.mq div{display:flex;gap:40px;white-space:nowrap;font:600 24px Fredoka;width:max-content;animation:mq 22s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;padding-bottom:20px}
+.stat{border:3px solid var(--ink);border-radius:26px;padding:22px;box-shadow:6px 6px 0 var(--ink);background:var(--c);transition:transform .2s}
+.stat:hover{transform:rotate(-3deg) scale(1.05)}
+.stat b{font:700 52px Fredoka;display:block;line-height:1}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:26px;perspective:1000px}
+.tilt{background:var(--c,#fff);border:3px solid var(--ink);border-radius:28px;padding:28px;box-shadow:7px 7px 0 var(--ink);transform-style:preserve-3d;transition:transform .15s ease-out}
+.tilt h3{font-size:25px;margin:6px 0 8px;transform:translateZ(36px)}
+.tilt p{margin:0;transform:translateZ(18px)}
+.emo{font-size:48px;display:inline-block;transform:translateZ(60px);transition:transform .3s}
+.tilt:hover .emo{animation:wob .6s}
+@keyframes wob{25%{transform:translateZ(60px) rotate(-14deg) scale(1.2)}75%{transform:translateZ(60px) rotate(14deg) scale(1.2)}}
+.flip{height:290px;perspective:1000px;cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left}
+.flip:focus-visible{outline:3px dashed var(--vio);outline-offset:5px;border-radius:28px}
+.inner{position:relative;width:100%;height:100%;transition:transform .8s cubic-bezier(.3,1.4,.5,1);transform-style:preserve-3d}
+.flip:hover .inner,.flip:focus-visible .inner,.flip.on .inner{transform:rotateY(180deg)}
+.side{position:absolute;inset:0;border:3px solid var(--ink);border-radius:28px;padding:26px;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:7px 7px 0 var(--ink);display:flex;flex-direction:column;justify-content:flex-end;background:var(--c);overflow:hidden}
+.side.fr h3{font-size:27px}
+.side.fr::before{content:attr(data-e);position:absolute;top:10px;right:20px;font-size:86px}
+.side.bk{transform:rotateY(180deg);background:#fff;justify-content:center}
+.side.bk p{margin:8px 0 0}
+.pill{display:inline-block;background:var(--c);border:2px solid var(--ink);border-radius:30px;padding:2px 14px;font:600 15px Fredoka;align-self:flex-start}
+/* timeline / chips */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.tl{display:grid;gap:22px}
+.tl div{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:5px 5px 0 var(--ink);transition:transform .2s}
+.tl div:hover{transform:translateX(8px) rotate(-1deg)}
+.tl b{font:600 21px Fredoka}.tl span{display:block;color:var(--vio);font-weight:800;font-size:15px}.tl p{margin:4px 0 0;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chips span{padding:9px 18px;border:3px solid var(--ink);border-radius:30px;background:var(--c);font:600 17px Fredoka;transition:transform .2s;cursor:default}
+.chips span:hover{transform:translateY(-6px) rotate(-4deg) scale(1.08)}
+.quote{background:var(--vio);color:#fff;border:3px solid var(--ink);border-radius:36px;padding:44px;box-shadow:9px 9px 0 var(--ink);font:500 clamp(22px,3vw,32px)/1.35 Fredoka;position:relative}
+.quote::before{content:"“";position:absolute;top:-10px;left:22px;font-size:120px;color:var(--sun)}
+.quote small{display:block;font:800 16px Nunito;margin-top:16px;color:#e9e2ff}
+.cta{text-align:center;padding:90px 5vw 70px}
+.cta h2{font-size:clamp(40px,6vw,76px)}
+.price{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin:34px 0}
+.price div{border:3px solid var(--ink);border-radius:24px;padding:18px 28px;background:var(--c);box-shadow:5px 5px 0 var(--ink)}
+.price b{font:700 34px Fredoka;display:block}
+footer{text-align:center;color:var(--mute);padding:26px;font-size:15px}
+.rv{opacity:0;transform:translateY(40px) rotate(-2deg) scale(.96);transition:opacity .7s,transform .8s cubic-bezier(.3,1.5,.5,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hero,.two{grid-template-columns:1fr}.scene{height:500px}nav a:nth-child(n+3){display:none}section{padding:70px 6vw}}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fff5fb}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<nav><b>nilam ✿</b><div><a href="#gallery">Portfolio</a><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#hire">Say hi</a></div></nav>
+<main>
+<section class="hero">
+  <div>
+    <h1>Hi, I'm Nilam <span class="wave">👋</span><br>I make brands <span class="hl">fun to follow.</span></h1>
+    <p>Social media manager for Instagram, TikTok, Facebook and LinkedIn. I plan the content, design the posts and talk with your community, so you get real engagement.</p>
+    <a class="btn main" href="#hire">Let's work together</a><a class="btn" href="#work">See my work</a>
+  </div>
+  <div class="scene" id="scene">
+    <span class="float" style="left:2%;top:12%;transform:translateZ(90px)">❤️</span>
+    <span class="float" style="right:2%;top:24%;animation-delay:-1s;transform:translateZ(120px)">✨</span>
+    <span class="float" style="left:6%;bottom:22%;animation-delay:-2s;transform:translateZ(70px)">💬</span>
+    <span class="float" style="right:6%;bottom:14%;animation-delay:-.5s;transform:translateZ(100px)">📸</span>
+    <div class="rig" id="rig"><div class="phone" id="phone">
+      <div class="ph-h"><div class="av">N</div><div><b>your brand</b><small>getting noticed</small></div></div>
+      <div class="post">🎨<img src="images/client.webp" alt="Nilam P." onerror="this.style.display='none'"></div>
+      <div class="act">🤍 💬 ✈️</div>
+      <div class="tiles"><i style="background:#ffe1ee">🌸</i><i style="background:#fff2bf">☀️</i><i style="background:#d2f7ea">🌿</i></div>
+    </div></div>
+    <div class="hint">Move your mouse over the phone and tap it</div>
+  </div>
+</section>
+
+<div class="mq"><div><span>Instagram ✦</span><span>TikTok ✦</span><span>Facebook ✦</span><span>LinkedIn ✦</span><span>Reels ✦</span><span>Content ✦</span><span>Growth ✦</span><span>Instagram ✦</span><span>TikTok ✦</span><span>Facebook ✦</span><span>LinkedIn ✦</span><span>Reels ✦</span><span>Content ✦</span><span>Growth ✦</span></div></div>
+
+<section class="stats">
+  <div class="stat rv" style="--c:var(--sun)"><b data-n="5" data-d="1">0</b>Client rating on Upwork</div>
+  <div class="stat rv" style="--c:var(--mint)"><b data-n="7">0</b>Certifications</div>
+  <div class="stat rv" style="--c:var(--sky)"><b data-n="4">0</b>Platforms managed</div>
+  <div class="stat rv" style="--c:#ffb3d1"><b data-n="30" data-s="+">0</b>Hours a week open</div>
+</section>
+
+<section id="gallery">
+  <h2 class="rv">My portfolio 📸</h2>
+  <p class="sub rv">Tap a card to see the real Instagram page.</p>
+  <div class="grid">
+    <a class="pf tilt rv" href="https://www.instagram.com/raktimcreates" target="_blank" rel="noopener" style="--c:#ffe1ee">
+      <div class="cv">🎨<img src="images/portfolio-1.png" alt="Content Creator Portfolio cover" onerror="this.style.display='none'"></div>
+      <div class="tx"><h3>Content Creator Portfolio</h3><p>Eye-catching posts and reels made to stop the scroll, with a clear style and a steady posting rhythm.</p><span class="go">View on Instagram</span></div>
+    </a>
+    <a class="pf tilt rv" href="https://www.instagram.com/muellerhomesinc" target="_blank" rel="noopener" style="--c:#d6eeff">
+      <div class="cv">🏡<img src="images/portfolio-2.png" alt="Real Estate Portfolio cover" onerror="this.style.display='none'"></div>
+      <div class="tx"><h3>Real Estate Portfolio</h3><p>Property posts, home tours and local content that bring in buyers and keep agents in front of their area.</p><span class="go">View on Instagram</span></div>
+    </a>
+    <a class="pf tilt rv" href="https://www.instagram.com/wingobingo.tv.africa" target="_blank" rel="noopener" style="--c:#fff2bf">
+      <div class="cv">🎮<img src="images/portfolio-3.png" alt="Entertainment &amp; Gaming Portfolio cover" onerror="this.style.display='none'"></div>
+      <div class="tx"><h3>Entertainment &amp; Gaming Portfolio</h3><p>Fun, high-energy content and community posts that keep a lively audience watching and joining in.</p><span class="go">View on Instagram</span></div>
+    </a>
+    <a class="pf tilt rv" href="https://www.instagram.com/getrizon_com" target="_blank" rel="noopener" style="--c:#d2f7ea">
+      <div class="cv">🚀<img src="images/portfolio-4.png" alt="Brand Growth Portfolio cover" onerror="this.style.display='none'"></div>
+      <div class="tx"><h3>Brand Growth Portfolio</h3><p>Clean brand visuals and consistent content that build trust and turn new followers into customers.</p><span class="go">View on Instagram</span></div>
+    </a>
+    <a class="pf tilt rv" href="https://www.instagram.com/aitoolswithpritham" target="_blank" rel="noopener" style="--c:#e6defe">
+      <div class="cv">🤖<img src="images/portfolio-5.png" alt="AI &amp; Tech Education Portfolio cover" onerror="this.style.display='none'"></div>
+      <div class="tx"><h3>AI &amp; Tech Education Portfolio</h3><p>Simple, useful posts that explain AI tools clearly and grow an audience that wants to learn.</p><span class="go">View on Instagram</span></div>
+    </a>
+    <div class="pf tilt rv" style="--c:#ffe1d2">
+      <div class="cv">✨<img src="images/portfolio-6.png" alt="Social Media Design cover" onerror="this.style.display='none'"></div>
+      <div class="tx"><h3>Social Media Design Portfolio</h3><p>Post graphics, story designs and reel covers with a matching look across every platform.</p><span class="go">Design samples</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <h2 class="rv">Things I've made 🎬</h2>
+  <p class="sub rv">Hover or tap a card to flip it.</p>
+  <div class="grid">
+    <button class="flip rv"><div class="inner"><div class="side fr" style="--c:var(--pink)" data-e="💬"><h3>Social Media &amp; Community Manager</h3></div><div class="side bk"><span class="pill" style="--c:var(--pink)">Engagement &amp; growth</span><p>Daily posting, replies to comments and DMs, and a friendly community that turns followers into loyal customers.</p></div></div></button>
+    <button class="flip rv"><div class="inner"><div class="side fr" style="--c:var(--mint)" data-e="🏡"><h3>Social Media Strategist for Real Estate</h3></div><div class="side bk"><span class="pill" style="--c:var(--mint)">Real estate</span><p>Content plans, property posts and audience targeting for agents who want local leads.</p></div></div></button>
+    <button class="flip rv"><div class="inner"><div class="side fr" style="--c:var(--sun)" data-e="📈"><h3>Instagram Growth &amp; Content Creation</h3></div><div class="side bk"><span class="pill" style="--c:var(--sun)">Instagram</span><p>Reels, hashtags, a content calendar and Insights tracking to grow reach organically, no ads needed.</p></div></div></button>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="rv">How I can help 💌</h2>
+  <p class="sub rv">Move your mouse over the cards. They tilt toward you.</p>
+  <div class="grid">
+    <div class="tilt rv" style="--c:#ffe1ee"><span class="emo">🎯</span><h3>Strategy &amp; campaigns</h3><p>Custom plans, buyer personas, competitor checks and clear goals for reach and engagement.</p></div>
+    <div class="tilt rv" style="--c:#fff2bf"><span class="emo">🎨</span><h3>Content &amp; design</h3><p>Original posts, reels and graphics that look like your brand, with captions and hashtags that get found.</p></div>
+    <div class="tilt rv" style="--c:#d2f7ea"><span class="emo">🌱</span><h3>Organic growth</h3><p>More followers through influencer outreach, giveaways and collaborations.</p></div>
+    <div class="tilt rv" style="--c:#d6eeff"><span class="emo">📣</span><h3>Ads &amp; leads</h3><p>Targeted Facebook, Instagram and TikTok ads, plus LinkedIn lead generation.</p></div>
+    <div class="tilt rv" style="--c:#e6defe"><span class="emo">📊</span><h3>Reports you can read</h3><p>A/B tests, best posting times and a simple monthly report.</p></div>
+    <div class="tilt rv" style="--c:#ffe1d2"><span class="emo">🤝</span><h3>Daily management</h3><p>Scheduling, posting, comments and DMs handled, so you can run your business.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="two">
+    <div><h2 class="rv">Where I've worked</h2>
+      <div class="tl">
+        <div class="rv"><b>Instagram Marketing Strategist</b><span>Maicam Services, Jan 2026 to now</span><p>Reels, captions and stories that lift visibility and sales.</p></div>
+        <div class="rv"><b>Instagram &amp; TikTok Growth Strategist</b><span>Marketix International, Jan 2026 to now</span><p>Organic growth with reels, hashtags and community building.</p></div>
+        <div class="rv"><b>Social Media Manager</b><span>DigiAEON, Aug 2025 to now</span><p>Full social media management for growing brands.</p></div>
+      </div></div>
+    <div><h2 class="rv">What I know</h2>
+      <div class="chips rv"><span style="--c:#ffe1ee">Social Strategy</span><span style="--c:#fff2bf">Instagram</span><span style="--c:#d2f7ea">Facebook</span><span style="--c:#d6eeff">Content Creation</span><span style="--c:#e6defe">Lead Generation</span><span style="--c:#ffe1d2">Design</span><span style="--c:#fff2bf">SEO Basics</span><span style="--c:#d2f7ea">Digital Marketing</span></div>
+      <p class="sub rv" style="margin-top:26px">Certified by DigiSkills.pk, Coursera and Alison. BBA from Karachi University. I speak English, Urdu and Hindi.</p></div>
+  </div>
+</section>
+
+<section><div class="quote rv">Great experience working with Nilam! She did a great job managing our social media, creating engaging content, and developing a solid content strategy…<small>★★★★★ Upwork client, 5.0 rating</small></div></section>
+
+<div class="cta" id="hire">
+  <h2 class="rv">Ready to glow up your socials? ✨</h2>
+  <div class="price rv"><div style="--c:var(--sun)"><b>$5/hr</b>Hourly rate</div><div style="--c:var(--mint)"><b>$20</b>30-minute chat</div><div style="--c:#ffb3d1"><b>From $50</b>Projects, 3-day delivery</div></div>
+  <a class="btn main" href="https://www.upwork.com/freelancers/~018bf2aeec1860a934" target="_blank" rel="noopener">Hire Nilam on Upwork</a>
+</div>
+</main>
+<footer>Made with 💜 for Nilam P. | Gilgit, Pakistan | Replies within 0 to 4 hours</footer>
+
+<script>
+(function(){
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const sc=document.getElementById('scene'),rig=document.getElementById('rig');
+if(!reduce){
+sc.addEventListener('pointermove',e=>{const r=sc.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;rig.style.transform=`rotateY(${px*40}deg) rotateX(${-py*30}deg)`});
+sc.addEventListener('pointerleave',()=>rig.style.transform='');
+let a=0;(function idle(){a+=.02;if(!sc.matches(':hover'))rig.style.transform=`rotateY(${Math.sin(a)*18}deg) rotateX(${Math.cos(a*.8)*6}deg)`;requestAnimationFrame(idle)})();}
+document.getElementById('phone').addEventListener('click',e=>{for(let i=0;i<8;i++){const h=document.createElement('span');h.className='heart';h.textContent=['❤️','💖','✨','💜','🌸'][i%5];h.style.left=e.clientX+(Math.random()*80-40)+'px';h.style.top=e.clientY+(Math.random()*20-10)+'px';h.style.animationDelay=i*60+'ms';document.body.appendChild(h);setTimeout(()=>h.remove(),1600)}});
+document.querySelectorAll('.tilt').forEach(t=>{
+t.addEventListener('pointermove',e=>{if(reduce)return;const r=t.getBoundingClientRect(),px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;t.style.transform=`rotateY(${(px-.5)*16}deg) rotateX(${(.5-py)*16}deg) translateZ(12px)`});
+t.addEventListener('pointerleave',()=>t.style.transform='')});
+document.querySelectorAll('.flip').forEach(f=>f.addEventListener('click',()=>f.classList.toggle('on')));
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;
+setTimeout(()=>el.classList.add('in'),(el.dataset.i||0)*100);
+el.querySelectorAll('[data-n]').forEach(n=>{const to=+n.dataset.n,d=+n.dataset.d||0,s=n.dataset.s||'',t0=performance.now();
+(function f(t){const k=Math.min((t-t0)/1300,1);n.textContent=(to*(1-Math.pow(1-k,3))).toFixed(d)+s;if(k<1)requestAnimationFrame(f)})(t0)});
+io.unobserve(el)}),{threshold:.15});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.dataset.i=i%3;io.observe(el)});
+})();
+</script>
+</body>
+</html>
